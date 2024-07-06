@@ -1,0 +1,26 @@
+#header{
+    background-color:rgb(57, 8, 234);
+    color: whitesmoke;
+    display:flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    margin-top: -0.5rem;
+    margin-left: -0.5rem;
+    width: 105vw;
+    margin-bottom: 0.5rem;
+}
+body{
+    display:flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    background-color:cadetblue;
+    color: rgb(42, 4, 95);
+    
+}
+.viewTasks{
+    text-decoration:none;
+    font-size:1.2rem;
+    color: aliceblue;
+}

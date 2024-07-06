@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Task</title>
+    <link rel="stylesheet" type="text/css" href="/updateTask.css">
+</head>
+<body>
+    <form action="/postUpdateTask" method="post">
+        <input type="hidden" id="id" name="id" value="<%=task.id%>"><br><br>
+        <label for="title">Task Title:</label><br>
+        <input type="text" id="title" name="title" value="<%=task.title%>"><br><br>
+        <label for="desc">Task Description:</label><br>
+        <input type="text" id="desc" name="desc" value="<%=task.desc%>"><br><br>
+        <label for="dueDate">Task due date:</label><br>
+        <input type="text" id="dueDate" name="dueDate" value="<%=task.dueDate%>"><br><br>
+        <button type="submit">Update Task</button>
+    </form>
+</body>
+</html>

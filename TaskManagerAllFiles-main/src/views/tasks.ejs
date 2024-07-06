@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks</title>
+    <link rel="stylesheet" type="text/css" href="/tasks.css">
+</head>
+<body>
+    <div id="tasks">
+            <div class="container">
+                <span class="taskID">Task ID</span> <span class="taskTitle">Title</span> <span class="taskDesc">Description</span> <span class="taskDueDate">Due Date</span>
+                <span class="action">Actions</span>
+            </div>
+            <% tasks.forEach((task)=>{ %>
+            <div class="container">
+                <span class="taskID"><%=task.id%></span> <span class="taskTitle"><%= task.title %></span> <span class="taskDesc"><%= task.desc %></span> <span class="taskDueDate"> <%= task.dueDate %></span>
+                <span class="actions">
+                    <a href="/delete/<%=task.title%>" class="deleteButton">Delete</a>
+                    <a href="/update/<%=task.id%>" class="deleteButton">Update Task</a>
+                </span>
+            </div>
+            <% }) %>
+    </div>
+    <a href="/addTask" class="addTask">Add Task</a>
+</body>
+</html>
